@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
             interactebale.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Application.OpenURL("https://www.spatial.io/");
                 PlayerPrefs.SetInt("BuildIndex", Convert.ToInt32(hit.transform.name));
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
