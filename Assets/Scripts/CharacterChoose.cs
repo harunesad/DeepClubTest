@@ -14,8 +14,8 @@ public class CharacterChoose : MonoBehaviour
     //}
     private void Start()
     {
-        Material material = GetComponentInChildren<MeshRenderer>().material;
-        material.SetColor("_EmissionColor", color * 0);
+        //Material material = GetComponentInChildren<MeshRenderer>().material;
+        //material.SetColor("_EmissionColor", color * 0);
     }
     private void OnMouseDown()
     {
