@@ -612,13 +612,13 @@ MonoBehaviour:
   - {fileID: 47719492954673409, guid: 34df3beea9c5a62418754196051b54ee, type: 3}
   - {fileID: 3006327692584732790, guid: 6a3d3ebcda6623a4cbcb63b2e904d973, type: 3}
   characters:
-  - {fileID: 5042583802288139174, guid: a365a1a557f7da94c832f953ef7771ba, type: 3}
-  - {fileID: 2118483860983814691, guid: 7ca42f84e4718fb4a90783f373f97c9c, type: 3}
+  - {fileID: 5740337514787678765, guid: 5f6896e3e2501394eba34d68e968db96, type: 3}
+  - {fileID: 6172001981544773576, guid: 0832e9e8d4be4164e9208e5ff4e89327, type: 3}
   interactebale: {fileID: 1239177639}
   eye: {fileID: 0}
   sceneLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 384
 --- !u!4 &1894509903
 Transform:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("sda");
             PlayerPrefs.SetInt("Index", -1);
             playButton.onClick.AddListener(Play);
         }
@@ -31,6 +32,7 @@ public class MenuManager : MonoBehaviour
         if (PlayerPrefs.GetInt("Index") != -1)
         {
             PlayerPrefs.SetInt("Choose", 1);
+            //PlayerPrefs.SetInt("Index", index);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

@@ -14,7 +14,7 @@ public class CharacterChoose : MonoBehaviour
     //}
     private void Start()
     {
-        Material material = GetComponentInChildren<SkinnedMeshRenderer>().material;
+        Material material = GetComponentInChildren<MeshRenderer>().material;
         material.SetColor("_EmissionColor", color * 0);
     }
     private void OnMouseDown()
@@ -23,8 +23,8 @@ public class CharacterChoose : MonoBehaviour
         {
             MenuManager.menu.mat.SetColor("_EmissionColor", color * 0);
         }
-        MenuManager.menu.mat = transform.GetComponentInChildren<SkinnedMeshRenderer>().material;
-        MenuManager.menu.mat.SetColor("_EmissionColor", color * 600);
+        MenuManager.menu.mat = transform.GetComponentInChildren<MeshRenderer>().material;
+        MenuManager.menu.mat.SetColor("_EmissionColor", color * 5);
         int index = Convert.ToInt32(gameObject.name);
         PlayerPrefs.SetInt("Index", index);
     }
