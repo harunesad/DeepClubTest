@@ -8,10 +8,13 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager menu;
+    public Material mat;
     int characterChoose;
     [SerializeField] Button playButton;
     private void Awake()
     {
+        menu = this;
         characterChoose = PlayerPrefs.GetInt("Choose");
         if (characterChoose == 1)
         {
