@@ -23,7 +23,8 @@ public class CharacterChoose : MonoBehaviour
         {
             MenuManager.menu.mat.SetColor("_EmissionColor", color * 0);
         }
-        MenuManager.menu.mat = transform.GetComponentInChildren<MeshRenderer>().materials[1];
+        //MenuManager.menu.mat = transform.GetComponentInChildren<MeshRenderer>().materials[1];
+        MenuManager.menu.mat = transform.GetComponentInChildren<SpriteRenderer>().materials[0];
         MenuManager.menu.mat.SetColor("_EmissionColor", color * 5);
         int index = Convert.ToInt32(gameObject.name);
         PlayerPrefs.SetInt("Index", index);
